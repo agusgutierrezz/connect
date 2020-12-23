@@ -1,0 +1,38 @@
+.features {
+  &_consulting,
+  &_medical,
+  &_engineering {
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right;
+  }
+  &_consulting {
+    background-color: $color-primary-purple;
+    background-image: url("/assets/favicons/charla.svg");
+  }
+  &_medical {
+    background-color: $color-primary-green;
+    background-image: url("/assets/favicons/first-aid-kit.svg");
+  }
+  &_engineering {
+    background-color: $turquoise;
+    background-image: url("/assets/favicons/engranaje.svg");
+
+    &_heading {
+      font-family: $font-bold;
+      text-transform: uppercase;
+      color: white;
+      font-size: 1.6rem;
+    }
+    &_paragraph {
+      color: white;
+      width: 60%;
+      font-family: $font-light;
+      font-size: 1.4rem;
+      list-style: none;
+      // -webkit-hyphens: manual;
+      // -ms-hyphens: manual;
+      // hyphens: manual;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.navbar {
+  color: $color-primary-blue;
+  &-collapse {
+    background-color: $color-primary;
+    text-transform: uppercase;
+    color: white;
+  }
+  &-brand {
+    text-transform: uppercase;
+    font-family: $font-bold !important;
+    font-weight: bold;
+
+    & span {
+      font-family: $font-light !important;
+      text-transform: capitalize;
+    }
+    &.dropdown-item {
+    }
+  }
+  &_lg {
+    & .col {
+      background-color: $color-primary;
+      text-align: center;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    & a {
+      text-transform: uppercase;
+      font-family: $font-bold;
+      color: white;
+      &:hover {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    &_medical {
+      &:hover {
+        background-color: $color-primary-green;
+      }
+    }
+    &_projects {
+      &:hover {
+        background-color: $turquoise;
+      }
+    }
+    &_consulting {
+      &:hover {
+        background-color: $color-primary-purple;
+      }
+    }
+  }
+}

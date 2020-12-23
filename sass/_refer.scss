@@ -1,0 +1,84 @@
+.refer {
+  &_text {
+    color: $color-primary !important;
+    font-size: 3rem !important;
+  }
+  &_paragraph {
+    color: $text-link;
+    font-size: 1.5rem;
+  }
+  &_btn {
+    border: 1px solid $color-primary-blue !important;
+    color: $color-primary-blue !important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.2s;
+    &:hover {
+      background-color: $color-primary-blue;
+      color: white !important;
+    }
+  }
+}
+.companies {
+  position: relative;
+
+  &_text {
+    background-color: $color-primary-blue;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    position: absolute;
+    & h2 {
+      font-size: 3rem !important;
+    }
+  }
+  &_paragraph {
+    color: white;
+    font-size: 1.5rem;
+  }
+  &_btn {
+    border: 1px solid white !important;
+    color: white !important;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.2s;
+    &:hover {
+      background-color: white;
+      color: $color-primary-blue !important;
+    }
+  }
+}
+.roles {
+  &_carousel {
+    width: 75%;
+  }
+  background-color: #f5f4fc;
+  &_title,
+  &_tertiary {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    color: $color-primary !important;
+  }
+  &_card {
+    background-color: white;
+    width: 80%;
+    border-radius: 13px;
+  }
+  &_fourth {
+    font-family: $font-bold;
+
+    color: $hover !important;
+  }
+  &_details {
+    font-family: $font-bold;
+    color: #5a656a;
+  }
+  &_links {
+    font-family: $font-bold;
+    color: $color-primary-blue;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}

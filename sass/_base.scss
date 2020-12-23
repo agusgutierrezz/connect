@@ -1,0 +1,43 @@
+// COLOR VARIABLES
+$color-primary: #1b1740;
+$color-primary-light: #4f5b60;
+$color-primary-green: #73ba9d;
+$color-primary-blue: #6b44c1;
+$color-primary-purple: #6b83c1;
+$text-link: #615b9b;
+$hover: #766cdc;
+$turquoise: #6baac1;
+// FONT VARIABLES
+$font-light: light;
+$font-bold: bold;
+
+@font-face {
+  font-family: light;
+  src: url(../assets/fonts/proximanovalight.ttf);
+}
+@font-face {
+  font-family: bold;
+  src: url(../assets/fonts/proximanovabold.otf);
+}
+*,
+*::before,
+*::after {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  color: $color-primary;
+  background-color: #ebe7fa !important;
+  line-height: 1.6;
+}
+.jumbotron {
+  &_banner {
+    font-family: $font-bold !important;
+  }
+}

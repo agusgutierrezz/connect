@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="/owlcarousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/owlcarousel/dist/assets/owl.theme.default.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/14dd9125ec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light d-md-none">
+        <div class="col justify-content-center">
+          <img
+            class="col"
+            style="width: 3rem"
+            src="/assets/favicons/CONNECT_260.png"
+            alt=""
+          />
+          <img
+            class="col"
+            style="width: 7rem"
+            src="/assets/favicons/logoconnect2.svg"
+            alt="Logo"
+          />
+        </div>
+        <div class="row">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSearchContent"
+            aria-controls="navbarSearchContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggle-icon mr-3">
+              <i class="fas fa-search icon"></i
+            ></span>
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">TimeSheets</a>
+            </li>
+            <li class="nav-item dropdown p-3">
+              <a
+                class="nav-link dropdown-toggle w-25"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Engineering/Projects/Operations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item p-3" href="#">Our Industries</a>
+                <a class="dropdown-item p-3" href="#">Browse Jobs</a>
+                <a class="dropdown-item p-3" href="#">Register & upload cv</a>
+                <a class="dropdown-item p-3" href="#">Contact</a>
+              </div>
+            </li>
+            <li class="nav-item p-3">
+              <a class="nav-link" href="#">Consulting</a>
+            </li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSearchContent">
+          <ul class="navbar-nav p-4">
+            <li class="nav-item p-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Keywords"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </li>
+            <li class="nav-item p-2">
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Industry</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
+            <li class="nav-item p-2">
+              <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Location</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </li>
+            <li class="nav-item p-2 align-self-center">
+              <button type="button" class="btn btn-main p-3">
+                Search Jobs
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="navbar_brand row d-none d-md-flex">
+        <div class="col justify-content-center">
+          <img
+            class="col"
+            style="width: 3rem"
+            src="/assets/favicons/CONNECT_260.png"
+            alt=""
+          />
+          <img
+            class="col"
+            style="width: 7rem"
+            src="/assets/favicons/logoconnect2.svg"
+            alt="Logo"
+          />
+        </div>
+        <div class="col row">
+          <button class="btn refer_btn p-2 m-2">connect personnel Home</button>
+          <button class="btn refer_btn p-2 m-2">
+            <img
+              style="width: 1.5rem"
+              src="/assets/favicons/calendario.svg"
+              alt="hours"
+            />
+            timesheets
+          </button>
+          <button class="btn refer_btn p-2 m-2">jobs</button>
+        </div>
+      </nav>
+      <div class="row d-none d-md-flex justify-content-center navbar_lg">
+        <div class="col p-3 navbar_lg_medical"><a href="#">Medical</a></div>
+        <div class="col p-3 navbar_lg_projects">
+          <a href="#">Engineering/projects/operations</a>
+        </div>
+        <div class="col p-3 navbar_lg_consulting">
+          <a href="#">Consulting</a>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid p-5">
+        <h1 class="p-5 text-center">
+          Find the right <span class="jumbotron_banner">connect</span>ion.
+        </h1>
+        <div class="jumbotron_form d-none d-md-block mx-auto">
+          <div class="row">
+            <div class="col px-1">
+              <input
+                type="text"
+                class="form-control p-2"
+                placeholder="Keywords"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="col px-1">
+              <select class="custom-select p-2" id="inputGroupSelect01">
+                <option selected>Industry</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col px-1">
+              <select class="custom-select p-2" id="inputGroupSelect01">
+                <option selected>Location</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div class="col px-1">
+              <button type="button" class="btn companies_btn p-2">
+                Search Jobs
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="features">
+        <div class="row">
+          <img
+            src="/assets/img/bigstock-Asian-Doctor-And-An-Assistant--266266891.jpg"
+            alt=""
+            class="col-4 align-self-stretch"
+          />
+          <img
+            src="/assets/img/shutterstock_1022251501.jpg"
+            alt=""
+            class="col-4 align-self-stretch"
+          />
+          <img
+            src="/assets/img/shutterstock_1085296022.jpg"
+            alt=""
+            class="col-4 align-self-stretch"
+          />
+        </div>
+        <div class="features_container row">
+          <div
+            class="col-sm col-md-4 d-flex flex-column justify-content-between features_medical align-self-stretch p-5"
+          >
+            <h4 class="features_engineering_heading mb-3">H3 Medical</h4>
+            <ul class="features_engineering_paragraph">
+              <li>Junior Doctors</li>
+              <li>Middle Grade Doctors</li>
+              <li>Specialist Doctors</li>
+              <li>Medical Directors</li>
+            </ul>
+            <button class="btn companies_btn text-left mt-5 w-50 p-3">
+              Go to Medical
+            </button>
+          </div>
+          <div
+            class="col-sm col-md-4 d-flex flex-column justify-content-between features_engineering align-self-stretch p-5"
+          >
+            <h4 class="features_engineering_heading mb-3">
+              Engineering&nbsp;/&nbsp;Projects&nbsp;/&nbsp; Operations
+            </h4>
+            <p class="features_engineering_paragraph">
+              Design&nbsp;/&nbsp;
+              Construction&nbsp;/&nbsp;Manufacturing&nbsp;/&nbsp;Oil &
+              Gas&nbsp;/&nbsp;Mining&nbsp;/&nbsp;Technology&nbsp;/&nbsp;
+              Renewable Energy&nbsp;/&nbsp;Utilities
+            </p>
+            <button class="btn text-left mt-5 companies_btn w-90 p-3 mt-3">
+              Go to Engineering&nbsp;/&nbsp;Projects&nbsp;/&nbsp;ops
+            </button>
+          </div>
+          <div
+            class="col-sm col-md-4 d-flex flex-column justify-content-between features_consulting align-self-stretch p-5"
+          >
+            <h4 class="features_engineering_heading mb-3">Consulting</h4>
+            <p class="features_engineering_paragraph">
+              Enabling organisations to link people´s roles and company learning
+              & development strategy to critical business objectives
+            </p>
+            <button class="btn mt-5 companies_btn text-left w-50 p-3">
+              Go to Consulting
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="roles p-5">
+        <h3 class="roles_title d-flex justify-content-center py-5">
+          Latest Roles
+        </h3>
+        <div class="roles_carousel mx-auto">
+          <div class="owl-carousel owl-theme mx-auto">
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+            <div class="roles_card p-3">
+              <h6 class="roles_tertiary p-2">Medical</h6>
+              <h4 class="roles_fourth my-3">Locum RMO General Medicine</h4>
+              <p class="roles_details">1-10-20 | Menning, NSW | Temp</p>
+              <p class="text mt-4 mb-3">
+                General Medicine RMO for Mid North NSW. Thus is a great
+                opportunity for someone looking to get a decent block of dates
+                in one location
+              </p>
+              <a href="#" class="roles_links">View Job</a>
+              <a href="#" class="roles_links ml-3">Medical Jobs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="companies d-none d-md-flex">
+        <img
+          src="/assets/img/shutterstock_1033103851.jpg"
+          class="img w-100"
+          alt="woman working"
+        />
+        <div class="companies_text p-5">
+          <h2>Connect Group of companies</h2>
+          <p class="companies_paragraph my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            eligendi quia exercitationem itaque commodi quaerat ab delectus
+            ullam, quos obcaecati blanditiis doloribus ut. Eum, quis. Ipsum quae
+            eligendi non optio.
+          </p>
+          <button type="button" class="btn companies_btn p-3 my-5">More</button>
+        </div>
+      </section>
+      <section
+        class="d-flex flex-column d-md-none p-5"
+        style="background-color: #6b44c1"
+      >
+        <img
+          src="/assets/img/shutterstock_1033103851.jpg"
+          class="img w-100"
+          alt="woman working"
+        />
+        <div class="p-3">
+          <h2>Connect Group of companies</h2>
+          <p class="companies_paragraph w-75 my-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            eligendi quia exercitationem itaque commodi quaerat ab delectus
+            ullam, quos obcaecati blanditiis doloribus ut. Eum, quis. Ipsum quae
+            eligendi non optio.
+          </p>
+          <button type="button" class="btn companies_btn p-3 my-2">More</button>
+        </div>
+      </section>
+      <section class="refer p-5">
+        <div class="d-flex justify-content-center">
+          <div class="w-100">
+            <h2 class="refer_text">Refer a friend</h2>
+
+            <p class="refer_paragraph mt-2 w-75">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              eligendi quia exercitationem it Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Soluta eligendi quia exercitationem
+              it aque commodi quaerat ab delectus.
+            </p>
+            <button type="button" class="btn refer_btn p-3 mt-4">
+              Refer a friend
+            </button>
+          </div>
+          <div class="d-none d-md-flex">
+            <img class="w-75" src="/assets/img/refer.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer p-5">
+        <div class="row">
+          <div class="col-sm">
+            <img class="w-50" src="/assets/favicons/whitelogo.svg" alt="" />
+          </div>
+
+          <div class="col-sm">
+            <div class="row mt-5">
+              <div class="col-auto">
+                <img
+                  class="footer_icon"
+                  src="/assets/favicons/phone.svg"
+                  alt="phone"
+                />
+              </div>
+              <div class="col ml-2">
+                <div class="col footer_heading">
+                  Call Engineering/ Projects/ Operations
+                </div>
+                <div class="col">
+                  <p class="d-none d-md-block">
+                    Kings Row Office Park, Building 2 Level 5
+                  </p>
+                  <p class="">Milton, Qld 4064</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="row mt-5">
+              <div class="col-auto">
+                <img
+                  class="footer_icon"
+                  src="/assets/favicons/phone.svg"
+                  alt="phone"
+                />
+              </div>
+              <div class="col ml-2">
+                <div class="col footer_heading">Call Medical</div>
+                <div class="col">
+                  <p class="d-none d-md-block">
+                    Suite 1A Level 2802 Pacific Highway
+                  </p>
+                  <p class="">Gordon, NSW 2072</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-8">
+            <p class="footer_copyright mr-2">
+              &copy; copyright 2021 connect personnel. all rights reserved.
+            </p>
+            <a class="footer_link"> Your PRIVACY</a>
+          </div>
+          <div class="col row footer_media">
+            <img
+              class="footer_media_linkedin"
+              src="/assets/favicons/instagram.png"
+              alt=""
+            />
+
+            <img
+              class="footer_media_facebook ml-3"
+              src="/assets/favicons/facebook.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 3,
+
+          dots: true,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+              dots: false,
+            },
+            600: {
+              items: 3,
+              nav: false,
+            },
+            1000: {
+              items: 3,
+              nav: false,
+              loop: false,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
